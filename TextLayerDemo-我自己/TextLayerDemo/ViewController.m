@@ -28,6 +28,8 @@
     //[self test2];
     
     //[self test3];
+    
+    //[self test4];
 }
 
 - (void)test1 {
@@ -36,8 +38,10 @@
     CGFloat leftMargin = 30.f;
     CGFloat width = [UIScreen mainScreen].bounds.size.width - 60;
     UIColor *color = [UIColor blueColor];
-    
+    CGSize limitSize = CGSizeMake(width, MAXFLOAT);
     UIFont *font = [UIFont boldSystemFontOfSize:150.f];
+    CGSize strSize;
+    
     YBTextLayer *textLayer = [YBTextLayer layer];
     textLayer.backgroundColor = [UIColor lightGrayColor].CGColor;
     
@@ -48,10 +52,8 @@
     paraStyle.tailIndent = 0;
     paraStyle.firstLineHeadIndent = 0.0;
     NSDictionary *attriDic = @{NSFontAttributeName:font,NSParagraphStyleAttributeName:paraStyle};
-    CGSize limitSize = CGSizeMake(width, MAXFLOAT);
     NSMutableAttributedString *mutAttriString = [[NSMutableAttributedString alloc] initWithString:string];
     [mutAttriString addAttributes:attriDic range:NSMakeRange(0, string.length)];
-    CGSize strSize;
     
     
     CFMutableAttributedStringRef attrString = CFAttributedStringCreateMutable(kCFAllocatorDefault, 0);
@@ -70,7 +72,7 @@
     
     //strSize = [string boundingRectWithSize:limitSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attriDic context:nil].size;
     //strSize = [self sizeWithString:string font:font limitSize:limitSize];
-    strSize = CGSizeMake(width, [self boundingHeightForWidth:limitSize withAttributedString:ret]);
+    strSize = CGSizeMake(width, [self boundingHeightForLimitSize:limitSize withAttributedString:ret]);
     
     
     textLayer.frame = CGRectMake(leftMargin, originY, width, strSize.height);
@@ -111,7 +113,7 @@
     [self.view addSubview:label];
 }
 
-- (CGFloat)boundingHeightForWidth:(CGSize)limitSize withAttributedString:(NSAttributedString *)attributedString {
+- (CGFloat)boundingHeightForLimitSize:(CGSize)limitSize withAttributedString:(NSAttributedString *)attributedString {
     CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString( (CFMutableAttributedStringRef) attributedString);
     CGSize suggestedSize = CTFramesetterSuggestFrameSizeWithConstraints(framesetter, CFRangeMake(0, 0), NULL, limitSize, NULL);
     CFRelease(framesetter);
@@ -239,4 +241,60 @@
     layer.alignmentMode = kCAAlignmentNatural;
     return layer;
 }
+
+- (void)test4 {
+    NSString *string = @"江南";
+    CGFloat originY = 150.f;
+    CGFloat leftMargin = 30.f;
+    CGFloat width = [UIScreen mainScreen].bounds.size.width - 60;
+    UIColor *color = [UIColor blueColor];
+    
+    UIFont *font = [UIFont boldSystemFontOfSize:150.f];
+    YBTextLayer *textLayer = [YBTextLayer layer];
+    textLayer.backgroundColor = [UIColor lightGrayColor].CGColor;
+    
+    NSMutableParagraphStyle *paraStyle = [[NSMutableParagraphStyle alloc] init];
+    paraStyle.lineSpacing = 0.0;
+    paraStyle.paragraphSpacing = 0.;
+    paraStyle.headIndent = 0;
+    paraStyle.tailIndent = 0;
+    paraStyle.firstLineHeadIndent = 0.0;
+    NSDictionary *attriDic = @{NSFontAttributeName:font,NSParagraphStyleAttributeName:paraStyle};
+    CGSize limitSize = CGSizeMake(width, MAXFLOAT);
+    NSMutableAttributedString *mutAttriString = [[NSMutableAttributedString alloc] initWithString:string];
+    [mutAttriString addAttributes:attriDic range:NSMakeRange(0, string.length)];
+    CGSize strSize;
+    
+    strSize = CGSizeMake(width, [self boundingHeightForLimitSize:limitSize withAttributedString:mutAttriString]);
+    
+    
+    textLayer.frame = CGRectMake(leftMargin, originY, width, strSize.height);
+    textLayer.foregroundColor = color.CGColor;
+    textLayer.alignmentMode = kCAAlignmentLeft;
+    textLayer.wrapped = YES;
+    textLayer.contentsScale = [UIScreen mainScreen].scale;
+    textLayer.truncationMode = kCATruncationNone;
+    
+    CFStringRef fontName = (__bridge CFStringRef)(font.fontName);
+    CGFontRef fontRef = CGFontCreateWithFontName(fontName);
+    textLayer.font = fontRef;
+    textLayer.fontSize = font.pointSize;
+    CGFontRelease(fontRef);
+    textLayer.string = mutAttriString;
+    
+    [self.view.layer addSublayer:textLayer];
+    
+    UIView *testView = [[UIView alloc]initWithFrame:CGRectMake(5, originY, 5, strSize.height)];
+    testView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:testView];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(leftMargin, originY+strSize.height + 50, width, strSize.height)];
+    label.font = font;
+    label.textAlignment = NSTextAlignmentLeft;
+    label.textColor = color;
+    label.backgroundColor = [UIColor lightGrayColor];
+    label.text = string;
+    [self.view addSubview:label];
+}
+
 @end

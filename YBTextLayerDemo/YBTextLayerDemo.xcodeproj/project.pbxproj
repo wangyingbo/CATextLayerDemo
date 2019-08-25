@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0372A2EF2312625D0069DBD8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0372A2EE2312625D0069DBD8 /* AppDelegate.m */; };
+		0372A2F22312625D0069DBD8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0372A2F12312625D0069DBD8 /* ViewController.m */; };
+		0372A2F52312625D0069DBD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0372A2F32312625D0069DBD8 /* Main.storyboard */; };
+		0372A2F7231262600069DBD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0372A2F6231262600069DBD8 /* Assets.xcassets */; };
+		0372A2FA231262600069DBD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0372A2F8231262600069DBD8 /* LaunchScreen.storyboard */; };
+		0372A2FD231262600069DBD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0372A2FC231262600069DBD8 /* main.m */; };
+		0372A307231262600069DBD8 /* YBTextLayerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0372A306231262600069DBD8 /* YBTextLayerDemoTests.m */; };
+		0372A312231262610069DBD8 /* YBTextLayerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0372A311231262610069DBD8 /* YBTextLayerDemoUITests.m */; };
+		0372A321231262A20069DBD8 /* YBTextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0372A320231262A20069DBD8 /* YBTextLayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0372A303231262600069DBD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0372A2E22312625D0069DBD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0372A2E92312625D0069DBD8;
+			remoteInfo = YBTextLayerDemo;
+		};
+		0372A30E231262610069DBD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0372A2E22312625D0069DBD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0372A2E92312625D0069DBD8;
+			remoteInfo = YBTextLayerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0372A2EA2312625D0069DBD8 /* YBTextLayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YBTextLayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0372A2ED2312625D0069DBD8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0372A2EE2312625D0069DBD8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0372A2F02312625D0069DBD8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0372A2F12312625D0069DBD8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0372A2F42312625D0069DBD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0372A2F6231262600069DBD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0372A2F9231262600069DBD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0372A2FB231262600069DBD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0372A2FC231262600069DBD8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0372A302231262600069DBD8 /* YBTextLayerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YBTextLayerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0372A306231262600069DBD8 /* YBTextLayerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBTextLayerDemoTests.m; sourceTree = "<group>"; };
+		0372A308231262600069DBD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0372A30D231262610069DBD8 /* YBTextLayerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YBTextLayerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0372A311231262610069DBD8 /* YBTextLayerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBTextLayerDemoUITests.m; sourceTree = "<group>"; };
+		0372A313231262610069DBD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0372A31F231262A20069DBD8 /* YBTextLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBTextLayer.h; sourceTree = "<group>"; };
+		0372A320231262A20069DBD8 /* YBTextLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBTextLayer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0372A2E72312625D0069DBD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0372A2FF231262600069DBD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0372A30A231262610069DBD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0372A2E12312625D0069DBD8 = {
+			isa = PBXGroup;
+			children = (
+				0372A2EC2312625D0069DBD8 /* YBTextLayerDemo */,
+				0372A305231262600069DBD8 /* YBTextLayerDemoTests */,
+				0372A310231262610069DBD8 /* YBTextLayerDemoUITests */,
+				0372A2EB2312625D0069DBD8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0372A2EB2312625D0069DBD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0372A2EA2312625D0069DBD8 /* YBTextLayerDemo.app */,
+				0372A302231262600069DBD8 /* YBTextLayerDemoTests.xctest */,
+				0372A30D231262610069DBD8 /* YBTextLayerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0372A2EC2312625D0069DBD8 /* YBTextLayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0372A2ED2312625D0069DBD8 /* AppDelegate.h */,
+				0372A2EE2312625D0069DBD8 /* AppDelegate.m */,
+				0372A2F02312625D0069DBD8 /* ViewController.h */,
+				0372A2F12312625D0069DBD8 /* ViewController.m */,
+				0372A31F231262A20069DBD8 /* YBTextLayer.h */,
+				0372A320231262A20069DBD8 /* YBTextLayer.m */,
+				0372A2F32312625D0069DBD8 /* Main.storyboard */,
+				0372A2F6231262600069DBD8 /* Assets.xcassets */,
+				0372A2F8231262600069DBD8 /* LaunchScreen.storyboard */,
+				0372A2FB231262600069DBD8 /* Info.plist */,
+				0372A2FC231262600069DBD8 /* main.m */,
+			);
+			path = YBTextLayerDemo;
+			sourceTree = "<group>";
+		};
+		0372A305231262600069DBD8 /* YBTextLayerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				0372A306231262600069DBD8 /* YBTextLayerDemoTests.m */,
+				0372A308231262600069DBD8 /* Info.plist */,
+			);
+			path = YBTextLayerDemoTests;
+			sourceTree = "<group>";
+		};
+		0372A310231262610069DBD8 /* YBTextLayerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0372A311231262610069DBD8 /* YBTextLayerDemoUITests.m */,
+				0372A313231262610069DBD8 /* Info.plist */,
+			);
+			path = YBTextLayerDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0372A2E92312625D0069DBD8 /* YBTextLayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0372A316231262610069DBD8 /* Build configuration list for PBXNativeTarget "YBTextLayerDemo" */;
+			buildPhases = (
+				0372A2E62312625D0069DBD8 /* Sources */,
+				0372A2E72312625D0069DBD8 /* Frameworks */,
+				0372A2E82312625D0069DBD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YBTextLayerDemo;
+			productName = YBTextLayerDemo;
+			productReference = 0372A2EA2312625D0069DBD8 /* YBTextLayerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0372A301231262600069DBD8 /* YBTextLayerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0372A319231262610069DBD8 /* Build configuration list for PBXNativeTarget "YBTextLayerDemoTests" */;
+			buildPhases = (
+				0372A2FE231262600069DBD8 /* Sources */,
+				0372A2FF231262600069DBD8 /* Frameworks */,
+				0372A300231262600069DBD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0372A304231262600069DBD8 /* PBXTargetDependency */,
+			);
+			name = YBTextLayerDemoTests;
+			productName = YBTextLayerDemoTests;
+			productReference = 0372A302231262600069DBD8 /* YBTextLayerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0372A30C231262610069DBD8 /* YBTextLayerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0372A31C231262610069DBD8 /* Build configuration list for PBXNativeTarget "YBTextLayerDemoUITests" */;
+			buildPhases = (
+				0372A309231262610069DBD8 /* Sources */,
+				0372A30A231262610069DBD8 /* Frameworks */,
+				0372A30B231262610069DBD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0372A30F231262610069DBD8 /* PBXTargetDependency */,
+			);
+			name = YBTextLayerDemoUITests;
+			productName = YBTextLayerDemoUITests;
+			productReference = 0372A30D231262610069DBD8 /* YBTextLayerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0372A2E22312625D0069DBD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "王颖博";
+				TargetAttributes = {
+					0372A2E92312625D0069DBD8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					0372A301231262600069DBD8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0372A2E92312625D0069DBD8;
+					};
+					0372A30C231262610069DBD8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0372A2E92312625D0069DBD8;
+					};
+				};
+			};
+			buildConfigurationList = 0372A2E52312625D0069DBD8 /* Build configuration list for PBXProject "YBTextLayerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0372A2E12312625D0069DBD8;
+			productRefGroup = 0372A2EB2312625D0069DBD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0372A2E92312625D0069DBD8 /* YBTextLayerDemo */,
+				0372A301231262600069DBD8 /* YBTextLayerDemoTests */,
+				0372A30C231262610069DBD8 /* YBTextLayerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0372A2E82312625D0069DBD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0372A2FA231262600069DBD8 /* LaunchScreen.storyboard in Resources */,
+				0372A2F7231262600069DBD8 /* Assets.xcassets in Resources */,
+				0372A2F52312625D0069DBD8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0372A300231262600069DBD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0372A30B231262610069DBD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0372A2E62312625D0069DBD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0372A2F22312625D0069DBD8 /* ViewController.m in Sources */,
+				0372A321231262A20069DBD8 /* YBTextLayer.m in Sources */,
+				0372A2FD231262600069DBD8 /* main.m in Sources */,
+				0372A2EF2312625D0069DBD8 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0372A2FE231262600069DBD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0372A307231262600069DBD8 /* YBTextLayerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0372A309231262610069DBD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0372A312231262610069DBD8 /* YBTextLayerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0372A304231262600069DBD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0372A2E92312625D0069DBD8 /* YBTextLayerDemo */;
+			targetProxy = 0372A303231262600069DBD8 /* PBXContainerItemProxy */;
+		};
+		0372A30F231262610069DBD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0372A2E92312625D0069DBD8 /* YBTextLayerDemo */;
+			targetProxy = 0372A30E231262610069DBD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0372A2F32312625D0069DBD8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0372A2F42312625D0069DBD8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0372A2F8231262600069DBD8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0372A2F9231262600069DBD8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0372A314231262610069DBD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0372A315231262610069DBD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0372A317231262610069DBD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2T9CHG78WE;
+				INFOPLIST_FILE = YBTextLayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.wangyingbo.www.YBTextLayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0372A318231262610069DBD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2T9CHG78WE;
+				INFOPLIST_FILE = YBTextLayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.wangyingbo.www.YBTextLayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0372A31A231262610069DBD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2T9CHG78WE;
+				INFOPLIST_FILE = YBTextLayerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.wangyingbo.www.YBTextLayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YBTextLayerDemo.app/YBTextLayerDemo";
+			};
+			name = Debug;
+		};
+		0372A31B231262610069DBD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2T9CHG78WE;
+				INFOPLIST_FILE = YBTextLayerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.wangyingbo.www.YBTextLayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YBTextLayerDemo.app/YBTextLayerDemo";
+			};
+			name = Release;
+		};
+		0372A31D231262610069DBD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2T9CHG78WE;
+				INFOPLIST_FILE = YBTextLayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.wangyingbo.www.YBTextLayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YBTextLayerDemo;
+			};
+			name = Debug;
+		};
+		0372A31E231262610069DBD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2T9CHG78WE;
+				INFOPLIST_FILE = YBTextLayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.wangyingbo.www.YBTextLayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YBTextLayerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0372A2E52312625D0069DBD8 /* Build configuration list for PBXProject "YBTextLayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0372A314231262610069DBD8 /* Debug */,
+				0372A315231262610069DBD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0372A316231262610069DBD8 /* Build configuration list for PBXNativeTarget "YBTextLayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0372A317231262610069DBD8 /* Debug */,
+				0372A318231262610069DBD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0372A319231262610069DBD8 /* Build configuration list for PBXNativeTarget "YBTextLayerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0372A31A231262610069DBD8 /* Debug */,
+				0372A31B231262610069DBD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0372A31C231262610069DBD8 /* Build configuration list for PBXNativeTarget "YBTextLayerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0372A31D231262610069DBD8 /* Debug */,
+				0372A31E231262610069DBD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0372A2E22312625D0069DBD8 /* Project object */;
+}
