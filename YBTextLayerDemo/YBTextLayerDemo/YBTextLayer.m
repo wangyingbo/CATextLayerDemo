@@ -19,6 +19,9 @@
     UIFont *font = [UIFont fontWithName:fontName size:fontSize];
     CGFloat lines = height/font.lineHeight;
     CGFloat yDiff = (height - fontSize*lines)/2.0;
+    if (lines<2) {
+        yDiff = (height - fontSize)/2 - fontSize/5;
+    }
     CGContextSaveGState(ctx);
     CGContextTranslateCTM(ctx, 0.0, yDiff);
     [super drawInContext:ctx];

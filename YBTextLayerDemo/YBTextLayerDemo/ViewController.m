@@ -10,7 +10,6 @@
 #import <CoreText/CoreText.h>
 #import "YBTextLayer.h"
 
-
 @interface ViewController ()
 
 @end
@@ -23,8 +22,10 @@
     [self verticallyAlignTextLayer];
 }
 
+#pragma mark - 自定义layer
+
 - (void)verticallyAlignTextLayer {
-    NSString *string = @"CALayer在概念和UIView类似，也是一些被层级关系树管理的矩形块，可以包含图片、文字、背景色等内容。";
+    NSString *string = @"CALayer在概念和UIView类似，也是一些被层级关系树管理的矩形块，可以包含图片、文字、背景色等内容。CATextLayer是CALayer的子级，如果需要重新布局则可以重写drawInContext:方法";
     CGFloat originY = 150.f;
     CGFloat leftMargin = 30.f;
     CGFloat width = [UIScreen mainScreen].bounds.size.width - 60;
